@@ -21,6 +21,6 @@ langchain4j:
         api-key: ${langchain4j.alibailian.api-key}
         model-name: qwen3.6-max-preview
 
-logging:
-  level:
-    root: debug
+#logging:
+#  level:
+#    root: debug
