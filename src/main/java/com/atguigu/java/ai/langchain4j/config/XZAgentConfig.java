@@ -8,15 +8,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SeparateChatMemoryAssistantConfig {
+public class XZAgentConfig {
 
     @Autowired private MongoChatMemoryStore mongoChatMemoryStore;
 
     @Bean
-    public ChatMemoryProvider chatMemoryProvider() {
+    public ChatMemoryProvider chatMemoryProviderXZ() {
         return memoryId -> MessageWindowChatMemory.builder()
                 .id(memoryId)
-                .maxMessages(10)
+                .maxMessages(20)
                 .chatMemoryStore(mongoChatMemoryStore)
                 .build();
     }
