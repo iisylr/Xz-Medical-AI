@@ -9,6 +9,11 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/${MongoDB.database-name}
+  datasource:
+    url: jdbc:mysql://localhost:3306/${MySQL.database-name}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${MySQL.username}
+    password: ${MySQL.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 langchain4j:
   open-ai:
@@ -29,3 +34,8 @@ logging:
     root: info
     com.atguigu: info
     dev.langchain4j: warn
+
+# 开启mybatis-plus日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
