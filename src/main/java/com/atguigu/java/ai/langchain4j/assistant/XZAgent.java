@@ -10,7 +10,8 @@ import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
 @AiService(
         wiringMode = EXPLICIT,
         chatModel = "openAiChatModel",
-        chatMemoryProvider = "chatMemoryProviderXZ"
+        chatMemoryProvider = "chatMemoryProviderXZ",
+        tools = "appointmentTools"
 )
 public interface XZAgent {
 
