@@ -11,8 +11,8 @@ import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
         wiringMode = EXPLICIT,
         chatModel = "openAiChatModel",
         chatMemoryProvider = "chatMemoryProviderXZ",
-        tools = "appointmentTools"
-)
+        tools = "appointmentTools",
+        contentRetriever = "contentRetrieverXZ")
 public interface XZAgent {
 
     @SystemMessage(fromResource = "XZAgentPrompt.txt")

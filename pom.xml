@@ -66,11 +66,23 @@
             <artifactId>mysql-connector-j</artifactId>
         </dependency>
 
-        <!--mybatis-plus 持久层-->
+        <!-- mybatis-plus 持久层-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
             <version>${mybatis-plus.version}</version>
+        </dependency>
+
+        <!-- pdf 解析器 -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-document-parser-apache-pdfbox</artifactId>
+        </dependency>
+
+        <!-- Easy RAG -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-easy-rag</artifactId>
         </dependency>
     </dependencies>
 
