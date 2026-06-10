@@ -28,6 +28,9 @@ langchain4j:
       chat-model:
         api-key: ${langchain4j.alibailian.api-key}
         model-name: qwen3.6-max-preview
+      embedding-model:
+        api-key: ${langchain4j.alibailian.api-key}
+        model-name: text-embedding-v4
 
 logging:
   level:
@@ -39,3 +42,8 @@ logging:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+elastic:
+  serverless:
+    endpoint: ${elastic.serverless.endpoint}
+    api-key: ${elastic.serverless.api-key}
