@@ -23,6 +23,12 @@ langchain4j:
       base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
       log-requests: true
       log-responses: true
+    streaming-chat-model:
+      model-name: deepseek-v4-pro
+      api-key: ${langchain4j.alibailian.api-key}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      log-requests: true
+      log-responses: true
   community:
     dashscope:
       chat-model:
